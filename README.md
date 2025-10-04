@@ -64,16 +64,21 @@ Build a domain-specific medical chatbot powered by LLaMA2, LangChain, and Pineco
    ```bash
    pip install -r requirements.txt
    ```
-3. **Add your Pinecone API key in `.env`.**
-4. **Build the index:**
+3. **Create Virtual Env:**
+   ```
+   conda create -n mchatbot python=3.8 -y
+   conda activate mchatbot
+   ```
+4. **Add your Pinecone API key in `.env`.**
+5. **Build the index:**
    ```bash
    python store_index.py
    ```
-5. **Run the app:**
+6. **Run the app:**
    ```bash
    python app.py
    ```
-6. **Open [http://localhost:8080](http://localhost:8080) in your browser.**
+7. **Open [http://localhost:8080](http://localhost:8080) in your browser.**
 
 ---
 
